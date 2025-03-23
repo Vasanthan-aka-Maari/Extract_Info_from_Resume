@@ -18,7 +18,7 @@ groq_api_key = os.getenv("groq_api_key")
 
 # Load the LLM model
 # llm = GoogleGenerativeAI(model="gemini-1.5-pro", google_api_key=google_api_key)
-llm = ChatGroq(model="llama-3.1-70b-versatile", groq_api_key=groq_api_key)
+llm = ChatGroq(model="llama-3.3-70b-versatile", groq_api_key=groq_api_key)
 
 # Streamlit app
 st.set_page_config(page_title="Fill LinkedIn Profile from Resume")
