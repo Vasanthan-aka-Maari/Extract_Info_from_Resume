@@ -126,6 +126,7 @@ if work:
 
     st.subheader("LinkedIn headlines for your profile:")
     st.write(st.session_state.linkedin_headline)
+    st.write("---")
 
     experience_data = chain3.invoke({"result": st.session_state.resume_info_as_json})
     st.subheader("Work experience:")
